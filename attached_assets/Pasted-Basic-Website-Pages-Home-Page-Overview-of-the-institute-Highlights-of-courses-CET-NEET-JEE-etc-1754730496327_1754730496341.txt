@@ -1,0 +1,109 @@
+Basic Website Pages
+Home Page
+
+Overview of the institute
+
+Highlights of courses (CET, NEET, JEE, etc.)
+
+Upcoming batches & announcements
+
+Quick enquiry form
+
+About Us
+
+History & mission of the institute
+
+Achievements & success stories
+
+Faculty profiles
+
+Courses & Services
+
+CET coaching details
+
+NEET coaching details
+
+JEE Main & Advanced coaching details
+
+Foundation & board exam coaching
+
+Course duration, fees, and batch schedules
+
+Admissions Page
+
+Online admission form
+
+Fee structure & payment options
+
+Eligibility criteria
+
+Results & Achievements
+
+Past student ranks & scores
+
+Testimonials from toppers
+
+Photo gallery of events/prize distributions
+
+Contact Us
+
+Address & Google Maps integration
+
+Phone, email, WhatsApp link
+
+Enquiry form
+
+2️⃣ Key Features & Functionalities
+Responsive Design (mobile-friendly)
+
+Online Registration Form (with database or email notification)
+
+Course Schedules & Timetable
+
+Photo & Video Gallery
+
+Download Section (brochures, study materials, application forms)
+
+Blog/News Section (exam tips, important updates)
+
+Testimonials/Reviews section
+
+Social Media Integration (Facebook, Instagram, YouTube links)
+
+SEO Optimized for ranking on Google (keywords like NEET coaching in [City], Best CET training institute, etc.)
+
+WhatsApp Chat Button for quick contact
+
+Google Calendar / Event Updates for exam dates & mock tests
+
+Online Fee Payment Gateway (optional)
+
+3️⃣ Technical Requirements
+Domain Name (e.g., www.institutename.com)
+
+Web Hosting (shared or cloud hosting with SSL certificate)
+
+SSL Certificate (for secure browsing – HTTPS)
+
+CMS or Tech Stack:
+
+WordPress (easy for non-tech staff to update)
+
+Custom HTML/CSS/JS + PHP/MySQL (for fully custom websites)
+
+React / Next.js (for modern, fast-loading site)
+
+Database (MySQL / MongoDB for registrations)
+
+Email Setup (e.g., info@institutename.com)
+
+4️⃣ Extra Enhancements
+Student Login Portal (to access results, notes, mock test scores)
+
+Online Test/Quiz System
+
+Push Notifications (exam reminders, announcements)
+
+Analytics Integration (Google Analytics, Search Console)
+
+Chatbot for FAQs
