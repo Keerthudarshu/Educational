@@ -153,6 +153,59 @@
     /* Hero Section */
     .hero {
         padding: 100px 0 60px;
+        }
+
+    /* Mobile Styles for Hero Section */
+    @media (max-width: 600px) {
+        .hero {
+            min-height: 50vh;
+            padding: 40px 0 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-container {
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-content {
+            width: 100%;
+        }
+        .hero-stats {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 0.5rem;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+        }
+        .stat-item {
+            min-width: 70px;
+            padding: 0.3rem;
+            font-size: 0.8rem;
+        }
+        .hero-image {
+            display: none !important;
+        }
+        .hero-buttons {
+            flex-direction: row !important;
+            gap: 0.5rem !important;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-buttons .btn {
+            font-size: 0.85rem !important;
+            padding: 8px 16px !important;
+            min-width: 90px;
+            max-width: 120px;
+            width: auto !important;
+        }
+    }
     }
     
     .hero-container {
