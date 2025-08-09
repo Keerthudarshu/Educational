@@ -3,7 +3,6 @@
 // Form validation and submission
 document.addEventListener('DOMContentLoaded', function() {
     initFormValidation();
-    initFormSubmission();
     initFormStorage();
     
     console.log('Form handlers initialized');
@@ -56,14 +55,14 @@ function validateField(field) {
     if (value && isValid) {
         switch (fieldType) {
             case 'email':
-                if (!utils.validateEmail(value)) {
+                if (!validateEmail(value)) {
                     isValid = false;
                     errorMessage = 'Please enter a valid email address';
                 }
                 break;
                 
             case 'tel':
-                if (!utils.validatePhone(value)) {
+                if (!validatePhone(value)) {
                     isValid = false;
                     errorMessage = 'Please enter a valid 10-digit phone number';
                 }
@@ -112,6 +111,19 @@ function validateField(field) {
     }
     
     return isValid;
+}
+
+// Email validation function
+function validateEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+// Phone validation function
+function validatePhone(phone) {
+    const phoneRegex = /^\d{10}$/;
+    const cleanPhone = phone.replace(/\D/g, '');
+    return phoneRegex.test(cleanPhone);
 }
 
 // Validate entire form
