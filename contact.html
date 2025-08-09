@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Excellence Educational Institute - Address, phone, email, enquiry form, and Google Maps location">
+    <meta name="keywords" content="contact excellence institute, address, phone number, email, enquiry form, location">
+    <title>Contact Us - Excellence Educational Institute</title>
+    
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="assets/logo.svg" alt="Excellence Educational Institute" class="logo">
+                    <span class="brand-text">Excellence Institute</span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="courses.html" class="nav-link">Courses <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="courses.html#cet">CET Coaching</a></li>
+                            <li><a href="courses.html#neet">NEET Coaching</a></li>
+                            <li><a href="courses.html#jee">JEE Coaching</a></li>
+                            <li><a href="courses.html#foundation">Foundation Courses</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="admissions.html" class="nav-link">Admissions</a></li>
+                    <li class="nav-item"><a href="results.html" class="nav-link">Results</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                </ul>
+                
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us for admissions, queries, or any assistance</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>123 Education Street<br>Knowledge City, State 400001<br>Near Central Library</p>
+                    <a href="https://goo.gl/maps/example" target="_blank" class="contact-link">Get Directions</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Main Office: +91 98765 43210<br>Admission Desk: +91 98765 43211<br>Student Support: +91 98765 43212</p>
+                    <a href="tel:+919876543210" class="contact-link">Call Now</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>General: info@excellenceinstitute.com<br>Admissions: admissions@excellenceinstitute.com<br>Support: support@excellenceinstitute.com</p>
+                    <a href="mailto:info@excellenceinstitute.com" class="contact-link">Send Email</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Quick queries and instant support<br>Available 24/7<br>+91 98765 43210</p>
+                    <a href="https://wa.me/919876543210" target="_blank" class="contact-link">Chat Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form and Map -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="form-container">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select Subject</option>
+                                    <option value="admission">Admission Inquiry</option>
+                                    <option value="course">Course Information</option>
+                                    <option value="fees">Fee Structure</option>
+                                    <option value="results">Results Query</option>
+                                    <option value="complaint">Complaint/Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="course-interest">Course Interest</label>
+                            <select id="course-interest" name="courseInterest">
+                                <option value="">Select Course (Optional)</option>
+                                <option value="neet">NEET Coaching</option>
+                                <option value="jee">JEE Main & Advanced</option>
+                                <option value="cet">CET Coaching</option>
+                                <option value="foundation">Foundation Course</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Please describe your query in detail..." required></textarea>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I agree to be contacted by Excellence Institute regarding my inquiry *</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="map-container">
+                    <h2>Find Us on Map</h2>
+                    <div class="map-wrapper">
+                        <div id="map" class="map-placeholder">
+                            <div class="map-content">
+                                <i class="fas fa-map-marked-alt"></i>
+                                <h3>Excellence Educational Institute</h3>
+                                <p>123 Education Street, Knowledge City</p>
+                                <p>Near Central Library, State 400001</p>
+                                <button onclick="loadMap()" class="btn btn-outline">Load Interactive Map</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-details">
+                        <h3>Location Details</h3>
+                        <ul>
+                            <li><i class="fas fa-bus"></i> <strong>Public Transport:</strong> City Bus Stop 100m away</li>
+                            <li><i class="fas fa-train"></i> <strong>Metro:</strong> Knowledge Park Metro Station (2 km)</li>
+                            <li><i class="fas fa-car"></i> <strong>Parking:</strong> Free parking available</li>
+                            <li><i class="fas fa-landmark"></i> <strong>Landmark:</strong> Opposite Central Library</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Hours -->
+    <section class="office-hours">
+        <div class="container">
+            <h2 class="section-title">Office Hours</h2>
+            <div class="hours-grid">
+                <div class="hours-card">
+                    <h3><i class="fas fa-clock"></i> Regular Hours</h3>
+                    <div class="hours-list">
+                        <div class="hours-item">
+                            <span class="day">Monday - Friday</span>
+                            <span class="time">9:00 AM - 7:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">Saturday</span>
+                            <span class="time">9:00 AM - 5:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">Sunday</span>
+                            <span class="time">10:00 AM - 2:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hours-card">
+                    <h3><i class="fas fa-graduation-cap"></i> Class Timings</h3>
+                    <div class="hours-list">
+                        <div class="hours-item">
+                            <span class="day">Morning Batch</span>
+                            <span class="time">7:00 AM - 12:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">Afternoon Batch</span>
+                            <span class="time">1:00 PM - 6:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">Evening Batch</span>
+                            <span class="time">6:30 PM - 9:30 PM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hours-card">
+                    <h3><i class="fas fa-headset"></i> Support Hours</h3>
+                    <div class="hours-list">
+                        <div class="hours-item">
+                            <span class="day">Phone Support</span>
+                            <span class="time">8:00 AM - 8:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">WhatsApp Support</span>
+                            <span class="time">24/7 Available</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">Email Response</span>
+                            <span class="time">Within 4 hours</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What documents are required for admission?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You'll need mark sheets of 10th and 12th (or latest class), ID proof, passport size photos, and any previous coaching certificates if applicable.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide study materials?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, comprehensive study materials are included in the course fee. This includes textbooks, practice papers, and online resources.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is there any entrance test for admission?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For some courses, we conduct an aptitude test to assess the student's current level and provide appropriate batch allocation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer online classes?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer hybrid learning with both offline and online options. Online classes are available for students who cannot attend physical classes.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the refund policy?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Refunds are processed as per our policy. Please contact our office for detailed information about refund terms and conditions.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide scholarship programs?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer merit-based scholarships and financial assistance programs for deserving students. Contact our admission desk for details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="assets/logo.svg" alt="Excellence Educational Institute" class="footer-logo">
+                        <h3>Excellence Institute</h3>
+                    </div>
+                    <p>Nurturing dreams, building futures. Your success is our commitment.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="results.html">Results</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Courses</h4>
+                    <ul>
+                        <li><a href="courses.html#neet">NEET Coaching</a></li>
+                        <li><a href="courses.html#jee">JEE Coaching</a></li>
+                        <li><a href="courses.html#cet">CET Coaching</a></li>
+                        <li><a href="courses.html#foundation">Foundation Courses</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Education Street, Knowledge City, State 400001</p>
+                        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                        <p><i class="fas fa-envelope"></i> info@excellenceinstitute.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Excellence Educational Institute. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+    <script>
+        // FAQ functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const icon = question.querySelector('i');
+                
+                question.addEventListener('click', function() {
+                    const isOpen = item.classList.contains('active');
+                    
+                    // Close all other FAQ items
+                    faqItems.forEach(otherItem => {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('.faq-question i').style.transform = 'rotate(0deg)';
+                    });
+                    
+                    // Toggle current item
+                    if (!isOpen) {
+                        item.classList.add('active');
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+        });
+        
+        // Load Google Map
+        function loadMap() {
+            const mapContainer = document.getElementById('map');
+            
+            // Replace with actual Google Maps embed or use Google Maps API
+            mapContainer.innerHTML = `
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835!2d-122.4221!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ2JzI5LjYiTiAxMjLCsDI1JzE5LjYiVw!5e0!3m2!1sen!2sus!4v1" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            `;
+        }
+    </script>
+</body>
+</html>

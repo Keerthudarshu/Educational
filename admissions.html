@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply for admission to Excellence Educational Institute - online application form, fee structure, and eligibility criteria">
+    <meta name="keywords" content="admission form, apply online, fee structure, eligibility criteria, entrance coaching admission">
+    <title>Admissions - Excellence Educational Institute</title>
+    
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="assets/logo.svg" alt="Excellence Educational Institute" class="logo">
+                    <span class="brand-text">Excellence Institute</span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="courses.html" class="nav-link">Courses <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="courses.html#cet">CET Coaching</a></li>
+                            <li><a href="courses.html#neet">NEET Coaching</a></li>
+                            <li><a href="courses.html#jee">JEE Coaching</a></li>
+                            <li><a href="courses.html#foundation">Foundation Courses</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="admissions.html" class="nav-link active">Admissions</a></li>
+                    <li class="nav-item"><a href="results.html" class="nav-link">Results</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                </ul>
+                
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Admissions</h1>
+            <p>Start your journey to success with Excellence Educational Institute</p>
+        </div>
+    </section>
+
+    <!-- Admission Steps -->
+    <section class="admission-steps">
+        <div class="container">
+            <h2 class="section-title">Admission Process</h2>
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Fill Application</h3>
+                        <p>Complete the online application form with accurate details</p>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Submit Documents</h3>
+                        <p>Upload required documents and academic certificates</p>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Entrance Test</h3>
+                        <p>Appear for entrance test (if applicable for selected course)</p>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Fee Payment</h3>
+                        <p>Pay admission fee and confirm your seat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Application Form -->
+    <section class="application-form">
+        <div class="container">
+            <h2 class="section-title">Online Application Form</h2>
+            <div class="form-container">
+                <form id="admissionForm" class="admission-form">
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-user"></i> Personal Information</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="dateOfBirth">Date of Birth *</label>
+                                <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="gender">Gender *</label>
+                                <select id="gender" name="gender" required>
+                                    <option value="">Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Academic Information -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-graduation-cap"></i> Academic Information</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="currentClass">Current Class *</label>
+                                <select id="currentClass" name="currentClass" required>
+                                    <option value="">Select Class</option>
+                                    <option value="10th">10th Standard</option>
+                                    <option value="11th">11th Standard</option>
+                                    <option value="12th">12th Standard</option>
+                                    <option value="12th-passed">12th Passed</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="board">Board of Education *</label>
+                                <select id="board" name="board" required>
+                                    <option value="">Select Board</option>
+                                    <option value="state">State Board</option>
+                                    <option value="cbse">CBSE</option>
+                                    <option value="icse">ICSE</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="schoolName">School Name *</label>
+                                <input type="text" id="schoolName" name="schoolName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="percentage">Previous Year Percentage</label>
+                                <input type="number" id="percentage" name="percentage" min="0" max="100" step="0.01">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Selection -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-book-open"></i> Course Selection</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="courseType">Course Type *</label>
+                                <select id="courseType" name="courseType" required>
+                                    <option value="">Select Course</option>
+                                    <option value="neet">NEET Coaching</option>
+                                    <option value="jee">JEE Main & Advanced</option>
+                                    <option value="cet">CET Coaching</option>
+                                    <option value="foundation">Foundation Course</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="batchPreference">Batch Preference *</label>
+                                <select id="batchPreference" name="batchPreference" required>
+                                    <option value="">Select Batch</option>
+                                    <option value="morning">Morning Batch</option>
+                                    <option value="afternoon">Afternoon Batch</option>
+                                    <option value="evening">Evening Batch</option>
+                                    <option value="weekend">Weekend Batch</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="startDate">Preferred Start Date *</label>
+                                <input type="date" id="startDate" name="startDate" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Parent/Guardian Information -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-users"></i> Parent/Guardian Information</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="parentName">Parent/Guardian Name *</label>
+                                <input type="text" id="parentName" name="parentName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="parentPhone">Parent Phone Number *</label>
+                                <input type="tel" id="parentPhone" name="parentPhone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="parentEmail">Parent Email Address</label>
+                                <input type="email" id="parentEmail" name="parentEmail">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="occupation">Parent Occupation</label>
+                                <input type="text" id="occupation" name="occupation">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Address Information -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-map-marker-alt"></i> Address Information</h3>
+                        <div class="form-grid">
+                            <div class="form-group full-width">
+                                <label for="address">Complete Address *</label>
+                                <textarea id="address" name="address" rows="3" required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="city">City *</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="state">State *</label>
+                                <input type="text" id="state" name="state" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="pincode">Pincode *</label>
+                                <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Information -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-info-circle"></i> Additional Information</h3>
+                        <div class="form-grid">
+                            <div class="form-group full-width">
+                                <label for="previousCoaching">Previous Coaching Experience (if any)</label>
+                                <textarea id="previousCoaching" name="previousCoaching" rows="2"></textarea>
+                            </div>
+                            
+                            <div class="form-group full-width">
+                                <label for="expectations">Your Expectations from the Course</label>
+                                <textarea id="expectations" name="expectations" rows="2"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="referralSource">How did you hear about us?</label>
+                                <select id="referralSource" name="referralSource">
+                                    <option value="">Select Source</option>
+                                    <option value="friend">Friend/Relative</option>
+                                    <option value="social-media">Social Media</option>
+                                    <option value="google">Google Search</option>
+                                    <option value="newspaper">Newspaper</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Terms and Conditions -->
+                    <div class="form-section">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="termsAccepted" name="termsAccepted" required>
+                            <label for="termsAccepted">I accept the <a href="#" target="_blank">Terms and Conditions</a> and <a href="#" target="_blank">Privacy Policy</a> *</label>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="marketingConsent" name="marketingConsent">
+                            <label for="marketingConsent">I agree to receive updates and promotional materials via email and SMS</label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i> Submit Application
+                        </button>
+                        <p class="form-note">* Required fields must be filled</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fee Structure -->
+    <section class="fee-structure">
+        <div class="container">
+            <h2 class="section-title">Fee Structure</h2>
+            <div class="fee-grid">
+                <div class="fee-card">
+                    <h3>NEET Coaching</h3>
+                    <div class="fee-amount">₹85,000</div>
+                    <div class="fee-duration">Annual Fee</div>
+                    <ul class="fee-includes">
+                        <li><i class="fas fa-check"></i> Study Material</li>
+                        <li><i class="fas fa-check"></i> Test Series</li>
+                        <li><i class="fas fa-check"></i> Doubt Clearing</li>
+                        <li><i class="fas fa-check"></i> Performance Analysis</li>
+                    </ul>
+                    <div class="payment-options">
+                        <h4>Payment Options:</h4>
+                        <p>• Full Payment: 5% discount</p>
+                        <p>• Quarterly: 4 installments</p>
+                        <p>• Monthly: 12 installments</p>
+                    </div>
+                </div>
+                
+                <div class="fee-card">
+                    <h3>JEE Coaching</h3>
+                    <div class="fee-amount">₹90,000</div>
+                    <div class="fee-duration">Annual Fee</div>
+                    <ul class="fee-includes">
+                        <li><i class="fas fa-check"></i> Study Material</li>
+                        <li><i class="fas fa-check"></i> Test Series</li>
+                        <li><i class="fas fa-check"></i> Doubt Clearing</li>
+                        <li><i class="fas fa-check"></i> Performance Analysis</li>
+                    </ul>
+                    <div class="payment-options">
+                        <h4>Payment Options:</h4>
+                        <p>• Full Payment: 5% discount</p>
+                        <p>• Quarterly: 4 installments</p>
+                        <p>• Monthly: 12 installments</p>
+                    </div>
+                </div>
+                
+                <div class="fee-card">
+                    <h3>CET Coaching</h3>
+                    <div class="fee-amount">₹60,000</div>
+                    <div class="fee-duration">Annual Fee</div>
+                    <ul class="fee-includes">
+                        <li><i class="fas fa-check"></i> Study Material</li>
+                        <li><i class="fas fa-check"></i> Test Series</li>
+                        <li><i class="fas fa-check"></i> Doubt Clearing</li>
+                        <li><i class="fas fa-check"></i> Performance Analysis</li>
+                    </ul>
+                    <div class="payment-options">
+                        <h4>Payment Options:</h4>
+                        <p>• Full Payment: 5% discount</p>
+                        <p>• Quarterly: 4 installments</p>
+                        <p>• Monthly: 10 installments</p>
+                    </div>
+                </div>
+                
+                <div class="fee-card">
+                    <h3>Foundation Course</h3>
+                    <div class="fee-amount">₹35,000</div>
+                    <div class="fee-duration">Annual Fee</div>
+                    <ul class="fee-includes">
+                        <li><i class="fas fa-check"></i> Study Material</li>
+                        <li><i class="fas fa-check"></i> Monthly Tests</li>
+                        <li><i class="fas fa-check"></i> Homework Support</li>
+                        <li><i class="fas fa-check"></i> Parent Meetings</li>
+                    </ul>
+                    <div class="payment-options">
+                        <h4>Payment Options:</h4>
+                        <p>• Full Payment: 10% discount</p>
+                        <p>• Half-yearly: 2 installments</p>
+                        <p>• Quarterly: 4 installments</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="payment-info">
+                <h3>Payment Methods Accepted</h3>
+                <div class="payment-methods">
+                    <div class="payment-method">
+                        <i class="fas fa-credit-card"></i>
+                        <span>Credit/Debit Cards</span>
+                    </div>
+                    <div class="payment-method">
+                        <i class="fas fa-university"></i>
+                        <span>Net Banking</span>
+                    </div>
+                    <div class="payment-method">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>UPI/Digital Wallets</span>
+                    </div>
+                    <div class="payment-method">
+                        <i class="fas fa-money-check"></i>
+                        <span>Cheque/DD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eligibility Criteria -->
+    <section class="eligibility">
+        <div class="container">
+            <h2 class="section-title">Eligibility Criteria</h2>
+            <div class="eligibility-grid">
+                <div class="eligibility-card">
+                    <h3><i class="fas fa-microscope"></i> NEET Coaching</h3>
+                    <ul>
+                        <li>Completed 10+2 with Physics, Chemistry, Biology</li>
+                        <li>Minimum 50% aggregate in PCB</li>
+                        <li>Age: 17-25 years</li>
+                        <li>Clear entrance test (if applicable)</li>
+                    </ul>
+                </div>
+                
+                <div class="eligibility-card">
+                    <h3><i class="fas fa-calculator"></i> JEE Coaching</h3>
+                    <ul>
+                        <li>Completed 10+2 with Physics, Chemistry, Mathematics</li>
+                        <li>Minimum 60% aggregate in PCM</li>
+                        <li>Age: 17-25 years</li>
+                        <li>Clear entrance test (if applicable)</li>
+                    </ul>
+                </div>
+                
+                <div class="eligibility-card">
+                    <h3><i class="fas fa-graduation-cap"></i> CET Coaching</h3>
+                    <ul>
+                        <li>Completed 10+2 from recognized state board</li>
+                        <li>Physics, Chemistry, Mathematics subjects</li>
+                        <li>Minimum 45% aggregate</li>
+                        <li>Domicile of the state required</li>
+                    </ul>
+                </div>
+                
+                <div class="eligibility-card">
+                    <h3><i class="fas fa-building"></i> Foundation Course</h3>
+                    <ul>
+                        <li>Currently studying in Class 8th, 9th, or 10th</li>
+                        <li>Minimum 60% in previous class</li>
+                        <li>Interest in Science and Mathematics</li>
+                        <li>Regular attendance commitment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Dates -->
+    <section class="important-dates">
+        <div class="container">
+            <h2 class="section-title">Important Dates</h2>
+            <div class="dates-timeline">
+                <div class="date-item">
+                    <div class="date-marker"></div>
+                    <div class="date-content">
+                        <h3>Application Opens</h3>
+                        <p class="date">1st July 2025</p>
+                        <p>Online application form becomes available</p>
+                    </div>
+                </div>
+                
+                <div class="date-item">
+                    <div class="date-marker"></div>
+                    <div class="date-content">
+                        <h3>Application Deadline</h3>
+                        <p class="date">31st July 2025</p>
+                        <p>Last date to submit application form</p>
+                    </div>
+                </div>
+                
+                <div class="date-item">
+                    <div class="date-marker"></div>
+                    <div class="date-content">
+                        <h3>Entrance Test</h3>
+                        <p class="date">5th August 2025</p>
+                        <p>Entrance test for eligible candidates</p>
+                    </div>
+                </div>
+                
+                <div class="date-item">
+                    <div class="date-marker"></div>
+                    <div class="date-content">
+                        <h3>Result Declaration</h3>
+                        <p class="date">10th August 2025</p>
+                        <p>Entrance test results and merit list</p>
+                    </div>
+                </div>
+                
+                <div class="date-item">
+                    <div class="date-marker"></div>
+                    <div class="date-content">
+                        <h3>Classes Begin</h3>
+                        <p class="date">15th August 2025</p>
+                        <p>Regular classes commence for all batches</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="assets/logo.svg" alt="Excellence Educational Institute" class="footer-logo">
+                        <h3>Excellence Institute</h3>
+                    </div>
+                    <p>Nurturing dreams, building futures. Your success is our commitment.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="results.html">Results</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Courses</h4>
+                    <ul>
+                        <li><a href="courses.html#neet">NEET Coaching</a></li>
+                        <li><a href="courses.html#jee">JEE Coaching</a></li>
+                        <li><a href="courses.html#cet">CET Coaching</a></li>
+                        <li><a href="courses.html#foundation">Foundation Courses</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Education Street, Knowledge City, State 400001</p>
+                        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                        <p><i class="fas fa-envelope"></i> info@excellenceinstitute.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Excellence Educational Institute. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+</body>
+</html>

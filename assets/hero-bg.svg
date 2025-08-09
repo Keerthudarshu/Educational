@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:0.1" />
+    </linearGradient>
+    <linearGradient id="studentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bookGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lightGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGradient)"/>
+  
+  <!-- Floating Education Elements -->
+  <g opacity="0.6">
+    <!-- Books -->
+    <rect x="100" y="80" width="30" height="20" rx="2" fill="url(#bookGradient)" transform="rotate(15 115 90)"/>
+    <rect x="680" y="120" width="25" height="18" rx="2" fill="url(#bookGradient)" transform="rotate(-20 692 129)"/>
+    <rect x="50" y="450" width="28" height="22" rx="2" fill="url(#bookGradient)" transform="rotate(25 64 461)"/>
+    
+    <!-- Graduation Caps -->
+    <g transform="translate(150,150)">
+      <polygon points="0,0 30,0 35,5 25,10 5,10 -5,5" fill="#1f2937"/>
+      <circle cx="30" cy="5" r="2" fill="#f59e0b"/>
+      <line x1="32" y1="5" x2="37" y2="10" stroke="#f59e0b" stroke-width="1.5"/>
+    </g>
+    
+    <g transform="translate(650,400) rotate(-15)">
+      <polygon points="0,0 25,0 30,4 20,8 5,8 -5,4" fill="#1f2937"/>
+      <circle cx="25" cy="4" r="1.5" fill="#f59e0b"/>
+      <line x1="26.5" y1="4" x2="30" y2="7" stroke="#f59e0b" stroke-width="1"/>
+    </g>
+    
+    <!-- Mathematical Symbols -->
+    <text x="200" y="100" font-family="serif" font-size="24" fill="#2563eb" opacity="0.4">∑</text>
+    <text x="620" y="180" font-family="serif" font-size="20" fill="#2563eb" opacity="0.4">π</text>
+    <text x="80" y="350" font-family="serif" font-size="22" fill="#2563eb" opacity="0.4">∆</text>
+    <text x="720" y="450" font-family="serif" font-size="18" fill="#2563eb" opacity="0.4">∞</text>
+    
+    <!-- Chemistry Elements -->
+    <circle cx="170" cy="450" r="8" fill="#10b981" opacity="0.5"/>
+    <circle cx="185" cy="445" r="6" fill="#ef4444" opacity="0.5"/>
+    <line x1="178" y1="450" x2="179" y2="445" stroke="#6b7280" stroke-width="2"/>
+    
+    <!-- DNA Helix -->
+    <g transform="translate(600,250)">
+      <path d="M0,0 Q10,10 0,20 Q-10,30 0,40 Q10,50 0,60" stroke="#10b981" stroke-width="3" fill="none" opacity="0.5"/>
+      <path d="M0,0 Q-10,10 0,20 Q10,30 0,40 Q-10,50 0,60" stroke="#ef4444" stroke-width="3" fill="none" opacity="0.5"/>
+    </g>
+  </g>
+  
+  <!-- Main Illustration - Students Studying -->
+  <g transform="translate(250,150)">
+    <!-- Desk -->
+    <rect x="0" y="200" width="300" height="15" rx="5" fill="#8b5cf6" opacity="0.8"/>
+    
+    <!-- Student 1 - Left -->
+    <g transform="translate(50,120)">
+      <!-- Head -->
+      <circle cx="0" cy="0" r="25" fill="#fbbf24"/>
+      <!-- Hair -->
+      <path d="M-25,0 Q-20,-20 0,-25 Q20,-20 25,0" fill="#7c2d12"/>
+      <!-- Body -->
+      <rect x="-20" y="25" width="40" height="60" rx="10" fill="url(#studentGradient)"/>
+      <!-- Arms -->
+      <rect x="-35" y="35" width="15" height="40" rx="7" fill="url(#studentGradient)"/>
+      <rect x="20" y="35" width="15" height="40" rx="7" fill="url(#studentGradient)"/>
+      <!-- Book -->
+      <rect x="-10" y="75" width="20" height="15" rx="2" fill="url(#bookGradient)"/>
+    </g>
+    
+    <!-- Student 2 - Center -->
+    <g transform="translate(150,100)">
+      <!-- Head -->
+      <circle cx="0" cy="0" r="28" fill="#f59e0b"/>
+      <!-- Hair -->
+      <path d="M-28,0 Q-22,-22 0,-28 Q22,-22 28,0" fill="#92400e"/>
+      <!-- Body -->
+      <rect x="-22" y="28" width="44" height="65" rx="12" fill="#7c3aed"/>
+      <!-- Arms -->
+      <rect x="-38" y="38" width="16" height="42" rx="8" fill="#7c3aed"/>
+      <rect x="22" y="38" width="16" height="42" rx="8" fill="#7c3aed"/>
+      <!-- Laptop -->
+      <rect x="-15" y="80" width="30" height="20" rx="3" fill="#374151"/>
+      <rect x="-12" y="83" width="24" height="14" rx="2" fill="#60a5fa"/>
+    </g>
+    
+    <!-- Student 3 - Right -->
+    <g transform="translate(250,130)">
+      <!-- Head -->
+      <circle cx="0" cy="0" r="24" fill="#fb7185"/>
+      <!-- Hair -->
+      <path d="M-24,0 Q-18,-18 0,-24 Q18,-18 24,0" fill="#881337"/>
+      <!-- Body -->
+      <rect x="-18" y="24" width="36" height="55" rx="9" fill="#059669"/>
+      <!-- Arms -->
+      <rect x="-32" y="32" width="14" height="38" rx="7" fill="#059669"/>
+      <rect x="18" y="32" width="14" height="38" rx="7" fill="#059669"/>
+      <!-- Notebook -->
+      <rect x="-8" y="70" width="16" height="12" rx="1" fill="#ffffff"/>
+      <line x1="-6" y1="73" x2="6" y2="73" stroke="#6b7280" stroke-width="1"/>
+      <line x1="-6" y1="76" x2="6" y2="76" stroke="#6b7280" stroke-width="1"/>
+      <line x1="-6" y1="79" x2="6" y2="79" stroke="#6b7280" stroke-width="1"/>
+    </g>
+    
+    <!-- Knowledge Rays emanating from students -->
+    <g stroke="url(#lightGradient)" stroke-width="2" opacity="0.6">
+      <path d="M150,50 L120,20 M150,50 L180,20 M150,50 L150,15" stroke-linecap="round"/>
+      <circle cx="120" cy="20" r="3" fill="#10b981"/>
+      <circle cx="180" cy="20" r="3" fill="#10b981"/>
+      <circle cx="150" cy="15" r="3" fill="#10b981"/>
+    </g>
+    
+    <!-- Floating Ideas/Lightbulbs -->
+    <g transform="translate(100,30)" opacity="0.7">
+      <circle cx="0" cy="10" r="8" fill="#fbbf24"/>
+      <rect x="-3" y="18" width="6" height="4" fill="#6b7280"/>
+      <path d="M-5,15 Q0,5 5,15" stroke="#ffffff" stroke-width="1" fill="none"/>
+    </g>
+    
+    <g transform="translate(200,25)" opacity="0.7">
+      <circle cx="0" cy="10" r="6" fill="#fbbf24"/>
+      <rect x="-2" y="16" width="4" height="3" fill="#6b7280"/>
+      <path d="M-3,13 Q0,7 3,13" stroke="#ffffff" stroke-width="1" fill="none"/>
+    </g>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <g opacity="0.3">
+    <!-- Success Path -->
+    <path d="M50,550 Q200,500 350,520 Q500,540 650,500 Q750,480 800,500" 
+          stroke="#10b981" stroke-width="3" fill="none" stroke-dasharray="10,5"/>
+    
+    <!-- Achievement Stars -->
+    <polygon points="100,500 102,506 108,506 103,510 105,516 100,512 95,516 97,510 92,506 98,506" fill="#fbbf24"/>
+    <polygon points="350,480 352,486 358,486 353,490 355,496 350,492 345,496 347,490 342,486 348,486" fill="#fbbf24"/>
+    <polygon points="600,460 602,466 608,466 603,470 605,476 600,472 595,476 597,470 592,466 598,466" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Motivational Geometric Shapes -->
+  <g opacity="0.4">
+    <polygon points="50,200 75,175 100,200 75,225" fill="#8b5cf6"/>
+    <circle cx="700" cy="300" r="15" fill="#ec4899"/>
+    <rect x="680" y="80" width="20" height="20" rx="3" fill="#06b6d4" transform="rotate(45 690 90)"/>
+  </g>
+</svg>
